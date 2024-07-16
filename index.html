@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="">
+		<title>Musical Empire</title>
+		<!-- **********  Animate.css  ********** -->
+		<link rel="stylesheet" href="essentials/animate.min.css">
+		
+		<!-- **********  Font Awesome  ********** -->
+		<script src="https://kit.fontawesome.com/82399518c9.js" crossorigin="anonymous"></script>
+		<!-- **********  Sweet Alert 2  ********** -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+		<!-- **********  Shortcut Icon  ********** -->
+		<link rel="shortcut icon" href="https://res.cloudinary.com/dumlauygo/image/upload/v1579857456/now-logo_lagtps.png">
+		<!-- **********  Bootstrap  ********** -->
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="essentials/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="essentials/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="essentials/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="essentials/bootstrap.min.js"></script>
+		<!-- **********  Smooth Scroll  ********** -->
+		<script src="essentials/smooth-scroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body onload="preloader()">
+		<div class="background-div">
+			<!-- **********  PreLoader  ********** -->
+			<script>function preloader(){
+				$(".preloader").addClass("animated fadeOut");
+			}</script>
+			<div class="preloader container-fluid"></div>
+			
+			<!-- **********  Preloader End  ********** -->
+			<!-- **********  Navbar ********** -->
+			<nav class="navbar navbar-expand-md animated fadeInDown">
+				
+				<a class="navbar-brand text-glow-hover" data-text="MUSICAL EMPIRE"><img src="img/logo.png">MUSICAL EMPIRE</a>
+				
+				<button type="button" class="navbar-toggler bg-light navbar-light" data-toggle="collapse" data-target="#nav">
+				
+				<span class=""><i class="fas fa-bars"></i></span>
+				
+				</button>
+				
+				<div class="collapse navbar-collapse justify-content-between" id="nav">
+					<ul class="navbar-nav ml-auto">
+						
+						<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="#notes" class="nav-link">Notes</a></li>
+						<li class="nav-item"><a href="#app" class="nav-link">App</a></li>
+						<li class="nav-item"><a href="#about-us" class="nav-link">About Us</a></li>
+						<li class="nav-item"><a href="#contact-us" class="nav-link">Contact Us</a></li>
+						<li class="nav-item"><a href="https://www.youtube.com/musicalempire" class="nav-link">Youtube</a></li>
+						<li class="nav-item"><a href="#" class="nav-link"><img src="img/search-icon.png" alt=""></a></li>
+						
+					</ul>
+					
+				</div>
+				
+			</nav>
+			<section class="discover-more text-center" id="home">
+				<img src="img/logo.png" alt="" class="discover-logo">
+				<h2 data-text="Discover More" class="text-glow">Discover More</h2>
+				<a href="#notes">
+					<div class="scroll-down">
+						<div class="scroll-icon glow">
+							<a data-scroll href="#notes"><img class="" src="img/scroll-dot.png"><!-- </i> --></a>
+						</div>
+					</div></a>
+				</section
+				>
+				<!-- <div class="scroll-top"><img src="img/scroll.png" alt=""></div> -->
+				<!-- ***********Notes Sections Start*********** -->
+				<section class="notes" id="notes">
+					<h2 class="notes_sec-title text-glow" data-text="Latest Notes">Latest Notes</h2>
+					<div class="notes-container" id="notes">
+						<div onclick="myf(12)" class="post glow">
+							<div class="post-img">
+								<img src="https://i.ytimg.com/vi/v2YsMtMOq1I/maxresdefault.jpg" alt="">
+							</div>
+							<div class="post-info">
+								<h5 class="post-title">Mard Maratha | Panipat</h5>
+								<p class="post-text">Movie : Panipat<br>Composer : Atul<br>Singer : Ajay</p>
+							</div>
+							<div class="post-details">
+								<span class="post-date">Oct 27, 2020</span>
+								<span class="post-cost">Free</span>
+							</div>
+						</div>
+						<div class="post glow">
+							<div class="post-img">
+								<img src="https://i.ytimg.com/vi/v2YsMtMOq1I/maxresdefault.jpg" alt="">
+							</div>
+							<div class="post-info">
+								<h5 class="post-title">Mard Maratha | Panipat</h5>
+								<p class="post-text">Movie : Panipat<br>Composer : Atul<br>Singer : Ajay</p>
+							</div>
+							<div class="post-details">
+								<span class="post-date">Oct 27, 2020</span>
+								<span class="post-cost">Free</span>
+							</div>
+						</div>
+						
+						<div class="post glow">
+							<div class="post-img">
+								<img src="https://i.ytimg.com/vi/v2YsMtMOq1I/maxresdefault.jpg" alt="">
+							</div>
+							<div class="post-info">
+								<h5 class="post-title">Mard Maratha | Panipat</h5>
+								<p class="post-text">Movie : Panipat<br>Composer : Atul<br>Singer : Ajay</p>
+							</div>
+							<div class="post-details">
+								<span class="post-date">Oct 27, 2020</span>
+								<span class="post-cost">Free</span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ***********Notes Sections End*********** -->
+				<!-- ***********App Sections Start*********** -->
+				<section class="app" id="app">
+					<div class="background-div">
+						<h2 data-text="App" class="text-glow">App</h2>
+						<div class="app-container">
+							<div class="app-info">
+								<h4 class="app-head">The Musical Empire App</h4>
+								<h6>This the Official Application of Musical Empire. Register on this app to stay connected with us. It will provide you with the notes of songs we post on <a href="https://youtube.com/musicalempire" data-text="YT Channel" class="text-glow">YT Channel</a>.</h6>
+								<button><div class="background glow">Download</div></button>
+							</div>
+							<div class="app-pic">
+								<img class="app-img" src="img/app-img.png" alt="">
+								<img class="phone-cover" src="img/slide-device.png" alt="">
+								
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- ***********App Sections End*********** -->
+				<!-- ***********About Us Sections Start*********** -->
+				<section class="about-us text-center" id="about-us">
+					<h2 class="AU_sec-title text-glow" data-text="About Us">About Us</h2>
+					<div class="AU-container" id="about-us">
+						<img src="img/logo.png" alt="">
+						<h1 class="text-glow" data-text="The Musical Empire">The Musical Empire</h1>
+						<h5>We are a Music category Channel on Youtube. Here you can see the covers and tutorials of various Songs on Piano. And also, you are provided with the notes of respective song.<br/> <span class="text-danger">So Like our videos , Share , And do Subscribe.</span></h5>
+					</div>
+				</section>
+				<!-- ***********About Us Sections End*********** -->
+				<!-- ***********Contact Us Sections Start*********** -->
+				<section class="contact-us text-center" id="contact-us">
+					<h2 class="CU_sec-title text-glow" data-text="Contact Us">Contact Us</h2>
+					<div class="CU-container" id="contact-us">
+						
+						<div class="CU-info">
+							<div class="icons">
+							<ul class="icons">
+								<li>
+									<a href="https://www.instagram.com/me_pianoking">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span class="fab fa-instagram"></span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/musicalempire">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span class="fab fa-youtube"></span>
+									</a>
+								</li>
+								<li>
+									<a href="https://musicalempire-yt.000webhostapp.com">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span class="fab fa-itunes-note"></span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+									<span></span>
+									<span></span>
+									<span></span>
+									<span></span>
+									<span class="fas fa-envelope"></span>
+									</a>
+								</li>
+							</ul>
+							</div>
+							<div class="details">
+								<ul>
+									<li>www.instagram.com/ME_PioanoKing</li>
+									<li>www.youtube.com/musicalempire</li>
+									<li>www.musicalempire.gq</li>
+									<li>musicalempireyt@gmail.com</li>
+								</ul>
+							</div>
+							<div class="details2">
+								<ul>
+									<li>/ME_PioanoKing</li>
+									<li>/musicalempire</li>
+									<li>www.musicalempire.gq</li>
+									<li>musicalempireyt@gmail.com</li>
+								</ul>
+							</div>
+						</div>
+						<div class="CU-form">
+							<form action="" class="form">
+								<div class="wrapper">
+								<div class="form-group name">
+									<input type="text" required>
+									<span class="input-border"></span>
+									<span class="input-hint">Your Name</span>
+								</div>
+								<div class="form-group email">
+									<input type="text" required>
+									<span class="input-border"></span>
+									<span class="input-hint">Your Email</span>
+								</div>
+								<div class="form-group msg">
+									<textarea name="" required></textarea>
+									<span class="input-border"></span>
+									<span class="input-hint">Your Messege</span>
+								</div>
+								<button type="submit" class="glow">Submit</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+				<!-- ***********Contact Us Section End*********** -->
+				<script type="text/javascript" src="script.js"></script>
+				<script>
+					function myf(a){
+				alert(a);}
+				</script>
+			</div>
+		</body>
+	</html>

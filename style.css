@@ -1,0 +1,723 @@
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul,ol{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+	color: #fff !important;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #fff;
+}
+input:focus,input:valid{
+	border : none;
+}
+.glow{
+	transition: .2s;
+}
+.glow:hover{
+	transition: .2s;
+	box-shadow: 0 0 10px #2ae8ff,0 0 40px #2ae8ff,0 0 80px #2ae8ff;
+	border-radius: 0;
+}
+.text-glow{
+	text-shadow:  0 0 10px #ae38ff,0 0 40px #2ae8ff,0 0 80px #2ae8ff;
+}
+.text-glow-hover{
+	transition: .2s
+}
+.text-glow-hover:hover{
+	text-shadow:  0 0 10px #ae38ff,0 0 40px #2ae8ff,0 0 80px #2ae8ff;
+	transition: .2s
+}
+body{
+	/*background: linear-gradient(rgba(0,0,0,.3) , rgba(0,0,0,.3)) , url('img/bg1.jpg');*/
+	background: url('img/bg2.jpg');
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Sulphur Point', sans-serif !important;
+}
+body .background-div{
+	background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url('img/blend-1g.png'),url('img/BG4B.png'),url('img/bg2.png');
+	height: 100%;
+	width: 100%;
+	background-position: center,center,center;
+	background-attachment: fixed,fixed,fixed;
+	background-repeat: no-repeat,no-repeat,no-repeat;
+}
+
+	/***********  Preloader Start  ************/
+	
+.preloader{
+	background: #000;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 9999999999;
+	background-image: url('img/preloader.gif');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 400px;
+}
+.preloader.fadeOut{
+	z-index: -999999;
+}
+
+	/***********  Preloader End  ************/
+	/***********  Navbar  ************/
+.navbar{
+	background: #000;
+	/*position: absolute !important;*/
+	/*width: 100%;*/
+	z-index: 333333;
+}
+.navbar-brand{
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	color: white !important;
+}
+.navbar-brand img{
+	width: 30px;
+	margin-right: 15px;
+}
+.nav-item{
+	margin-left: 50px !important;
+}
+.nav-link{
+	color: white !important;
+}
+
+/***********  Navbar End  ***********/
+
+/***********  Custom Scrollbar Start  ***********/
+::-webkit-scrollbar {
+
+    background: #16071c;
+    width: 25px;
+}
+::-moz-scrollbar {
+
+    background: #16071c;
+    width: 25px;
+}
+::-ms-scrollbar {
+
+    background: #16071c;
+    width: 25px;
+}
+::-webkit-scrollbar-thumb{
+
+  border-radius: 10px;
+  border: 2px solid #dd42a7;
+  background: -webkit-linear-gradient(23deg, rgb(0, 5, 27) 0%, rgb(47, 4, 83) 72%, rgb(55, 1, 87) 96%);
+
+background: linear-gradient(67deg, rgb(0, 5, 27) 0%, rgb(47, 4, 83) 72%, rgb(55, 1, 87) 96%);
+}
+
+::-moz-scrollbar-thumb{
+
+  border-radius: 10px;
+  border: 2px solid #dd42a7;
+
+
+background: -moz-linear-gradient(23deg, rgb(0, 5, 27) 0%, rgb(47, 4, 83) 72%, rgb(55, 1, 87) 96%);
+background: linear-gradient(67deg, rgb(0, 5, 27) 0%, rgb(47, 4, 83) 72%, rgb(55, 1, 87) 96%);
+}
+::-ms-scrollbar-thumb{
+
+  border-radius: 10px;
+  border: 2px solid #dd42a7;
+
+
+background: -ms-linear-gradient(23deg, rgb(0, 5, 27) 0%, rgb(47, 4, 83) 72%, rgb(55, 1, 87) 96%);
+
+background: linear-gradient(67deg, rgb(0, 5, 27) 0%, rgb(47, 4, 83) 72%, rgb(55, 1, 87) 96%);
+}
+
+/***********  Custom Scrollbar End  ***********/
+
+
+/***********  Section Discover More Start and scroll top  ***********/
+/*.scroll-top{
+	height: auto;
+	width: auto;
+	overflow: hidden;
+	bottom: 25px;
+	right: 25px;
+	position: fixed;
+	display: block;
+	-webkit-box-shadow: 7px 7px 40px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 40px -6px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 40px -6px rgba(0,0,0,0.75);
+	background-image: linear-gradient(to right, #ae38ff , #2ae8ff);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+	display: block;
+	cursor: pointer;
+	transition: 1s;
+}
+.scroll-top img{
+	height: 25px;
+	width: 25px;
+	position: fixed !important;
+}*/
+.discover-more{
+	/*padding-top: 130px;*/
+	height: calc(100vh - 63px);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.discover-more .discover-logo{
+	width: 200px;
+	margin-bottom: 30px;
+	border-radius: 50%;
+	box-shadow: 0 0 150px #000;
+}
+.discover-more h2{
+	color: #fff;
+	font-size: 50px;
+}
+/*.discover-more .scroll-down{
+	padding: 10px;
+	/*background: red;*/
+	/*height: 50px;*/
+	/*height: auto;
+	border: 1px solid #fff;*/
+
+/*}
+.discover-more .scroll-down .scroll-icon{
+	height: 40px;
+	width: 20px;
+	background: red !important;
+
+}*/
+
+.discover-more .scroll-down{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+.discover-more .scroll-down .scroll-icon{
+	border: 2px solid white;
+	width: 30px;
+	border-radius: 20px;
+	height: 60px;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	/*padding-top: -10px;*/
+}
+.discover-more .scroll-down .scroll-icon a{
+	padding-top: 65px; 
+}
+.discover-more .scroll-down .scroll-icon img{
+	animation: pulse 1s infinite;
+	width: 15px;
+	margin-top: 11px;
+}
+@keyframes pulse {
+	0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+50% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+}
+100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+}
+
+/***********  Section Discover More End  ***********/
+/***********  Section Notes Start  ***********/
+section.notes{
+	background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	flex-direction: column;
+	/*margin-top :40px;*/
+	height: 100vh;
+	padding-top: 70px;
+	align-items: center !important;
+}
+section.notes h2.notes_sec-title{
+	color: white;
+	font-weight: 500;
+	align-self: center; 
+	/*margin-top: 20px;*/
+}
+div.notes-container{
+	width: 85%;
+	/*background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));*/
+	padding: 3rem 4rem;
+	display: grid;
+ 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ 	grid-gap: 2rem;
+ 	grid-row-gap: 2rem;
+}
+/***********Post Start***********/
+
+
+.post{
+	background-image: linear-gradient(to right, #ae38ff , #2ae8ff);
+	width: 300px;
+	max-width: 600px;
+	min-width: 300px;
+	height: 24rem;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.post .post-img{
+	overflow: hidden;
+	width: 300px;
+	height: 200px;
+}
+.post .post-img img{
+	width: 100%;
+	height: 100%;
+}
+.post .post-info {
+	padding: .8rem .8rem 0 .8rem;
+}
+.post .post-details{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: .8rem;
+}
+.post .post-details span{
+	padding: 2px 15px;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	border-radius: 20px;
+	font-weight: 25;
+}
+@media screen and (max-width: 360px) {
+	section.notes{
+		padding: 6rem auto;
+	}
+}
+/***********Post End ***********/
+/***********  Section Notes End  ***********/
+/***********  App Notes start  ***********/
+section.app{
+	width: 100%;
+	height: 100vh;
+	background-image: url('img/gb1.png');
+}
+section.app>.background-div{
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('img/BG4B.png'),url('img/blend-1g.png'),url('img/BG3.png');
+	background-position: center,center,center;
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-attachment: fixed,fixed,fixed;
+	padding-top: 90px;
+	text-align: center;
+}
+section.app .background-div h2{
+	color: white;
+}
+section.app .background-div .app-container{
+	display: flex;
+	width: 100%;
+}
+section.app .background-div .app-container .app-info{
+	width: 50%;
+	padding: 0px 90px; 
+	height: 100%;
+	padding-top: 80px;
+}
+section.app .background-div .app-container .app-info h4.app-head{
+	color: white;
+	font-size: 1.8rem;
+}
+section.app .background-div .app-container .app-info h6{
+	text-align: left;
+	color: white;
+	line-height: 30px;
+	padding-top: 60px;
+	font-size: 1.1rem !important;
+	font-weight: 300 !important;
+}
+section.app .background-div .app-container .app-info button{
+	width: 130px;
+	height: 50px;
+	margin-top: 40px;
+	background: linear-gradient(to right, #ae38ff , #2ae8ff);
+	border: 0;
+	border-radius: 30px;
+}
+section.app .background-div .app-container .app-info button .background{
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3));
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+}
+section.app .background-div .app-container .app-info button .background{
+	color: white;
+	font-weight: 500;
+	font-size: 1.25rem;
+}
+section.app .background-div .app-container .app-pic{
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+section.app .background-div .app-container .app-pic img.app-img{
+	width: 200px;
+	margin-top: 26px;
+}
+section.app .background-div .app-container .app-pic img.phone-cover{
+	transform: translateX(-200px);
+	width: 200px;
+	/*margin-top: 26px;*/
+	position: absolute;
+}
+/***********  App End  ***********/
+/***********  About Us Starts  ***********/
+
+section.about-us{
+	padding-top: 90px;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6));
+}
+section.about-us .AU-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 190px;
+}
+section.about-us .AU-container img{
+	width: 140px;
+	padding-top: 50px;
+}
+section.about-us .AU-container h1{
+	padding-top: 30px;
+}
+section.about-us .AU-container h5{
+	padding-top: 15px;
+}
+section.about-us .AU-container h5 span.subscribe{
+	color: red;
+}
+
+/***********  About Us End  ***********/
+/***********  Contact Us Start  ***********/
+
+section.contact-us{
+	padding-top: 90px;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),url('img/gb1.png');
+	overflow: hidden;
+	background-attachment: fixed;
+}
+section.contact-us .CU-container{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	padding-top: 20px;
+}
+section.contact-us .CU-container .CU-form{
+	height: 85%;
+	width :50%;
+	border-left: 1px solid white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+section.contact-us .CU-container .CU-form form{
+	width: 55%;
+	height: 100%;
+	background-image: linear-gradient(to right, #ae38ff , #2ae8ff);
+	-webkit-box-shadow: 7px 7px 40px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 40px -6px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 40px -6px rgba(0,0,0,0.75);
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+section.contact-us .CU-container .CU-form form .wrapper{
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+	padding: 3rem 4rem;
+	text-align: left;
+}
+section.contact-us .CU-container .CU-form form input,
+section.contact-us .CU-container .CU-form form textarea{
+	background: none;
+	border: none;
+	resize: none;
+	z-index: 3;
+	color: white;
+}
+section.contact-us .CU-container .CU-form form .wrapper .form-group{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+section.contact-us .CU-container .CU-form form .wrapper .form-group .input-border{
+	width: 40%;
+	height: 2px;
+	display: block;
+	/*position: absolute;*/
+	background: #fff;
+	transition: all .2s ease;
+
+}
+section.contact-us .CU-container .CU-form form .wrapper .form-group .input-hint{
+	color: #fff;
+	font-size: 1.06rem;
+	transition: all .2s ease;
+	transform: translateY(-30px);
+}
+
+section.contact-us .CU-container .CU-form form .wrapper .form-group input:focus ~ span.input-border,
+section.contact-us .CU-container .CU-form form .wrapper .form-group textarea:focus ~ span.input-border,
+section.contact-us .CU-container .CU-form form .wrapper .form-group input:valid ~ span.input-border,
+section.contact-us .CU-container .CU-form form .wrapper .form-group textarea:valid ~ span.input-border{
+	width: 100%;
+}
+section.contact-us .CU-container .CU-form form .wrapper .form-group input:focus ~ span.input-hint,
+section.contact-us .CU-container .CU-form form .wrapper .form-group input:valid ~ span.input-hint{
+	transform: translateY(-50px) scale(0.8) translateX(-32px);
+}
+section.contact-us .CU-container .CU-form form .wrapper .form-group textarea:focus ~ span.input-hint,
+section.contact-us .CU-container .CU-form form .wrapper .form-group textarea:valid ~ span.input-hint{
+	transform: translateY(-75px) scale(0.8) translateX(-32px);
+}
+section.contact-us .CU-container .CU-form form .wrapper button{
+	width: 100px;
+	height: 35px;
+	border-radius: 30px;
+	margin-top: 30px;
+	border: none;
+	background: linear-gradient(to right, #ae38ff , #2ae8ff);
+	color: white;
+
+}
+
+section.contact-us .CU-container .CU-info{
+	height: 85%;
+	width :50%;
+	border-right: 1px solid white;
+	display: flex;
+}
+section.contact-us .CU-container .CU-info div.icons{
+		width: 35%;
+}
+section.contact-us .CU-container .CU-info ul.icons{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+section.contact-us .CU-container .CU-info ul.icons li{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	margin: 0 30px;
+	transform: rotate(-30deg) skew(25deg);
+	background: ;
+	margin-top: 50px;
+}
+section.contact-us .CU-container .CU-info ul.icons li a span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	transition: .5s;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 20px !important; 
+}
+section.contact-us .CU-container .CU-info ul.icons li:hover a span:nth-child(5){
+	transform: translate(40px,-40px);
+	opacity: 1;	
+}
+section.contact-us .CU-container .CU-info ul.icons li:hover a span:nth-child(4){
+	transform: translate(30px,-30px);
+	opacity: .8;	
+}
+section.contact-us .CU-container .CU-info ul.icons li:hover a span:nth-child(3){
+	transform: translate(20px,-20px);
+	opacity: .6;	
+}
+section.contact-us .CU-container .CU-info ul.icons li:hover a span:nth-child(2){
+	transform: translate(10px,-10px);
+	opacity: .4;	
+}
+section.contact-us .CU-container .CU-info ul.icons li:hover a span:nth-child(1){
+	transform: translate(0px,0px);
+	opacity: .2;	
+}
+section.contact-us .CU-container .CU-info ul.icons li:nth-child(1) span{
+	background: #e4405f;
+}
+section.contact-us .CU-container .CU-info ul.icons li:nth-child(3) span{
+	background: #3399ff;
+} 
+section.contact-us .CU-container .CU-info ul.icons li:nth-child(4) span{
+	background: #25D366;
+}
+section.contact-us .CU-container .CU-info .details{
+	width: 65%;
+}
+section.contact-us .CU-container .CU-info .details ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	margin-right: 80px;
+	text-align: left;
+}
+section.contact-us .CU-container .CU-info .details ul li{
+	height: 40px !important;
+	margin-top: 51px;
+	color: white;
+}
+section.contact-us .CU-container .CU-info .details2{
+	width: 65%;
+	display: none;
+}
+section.contact-us .CU-container .CU-info .details2 ul{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	/*align-items: center;*/
+	margin-right: 80px;
+	text-align: left;
+}
+section.contact-us .CU-container .CU-info .details2 ul li{
+	height: 40px !important;
+	margin-top: 51px;
+	color: white;
+}
+
+/***********  Contact Us End  ***********/
+
+/***************************** Media Queries *******************************/
+@media only screen and (max-width: 361px){
+	section{
+		overflow: hidden;
+	}
+	/*********************  Discover More  *********************/
+
+	section.discover-more img.discover-logo{
+		width: 150px;
+	}
+	section.discover-more h2{
+		font-size: 2.5rem;
+	}
+	/*********************** Notes ***********************/
+	section.notes{
+	}
+	section.notes .notes-container{
+		display: flex;
+		overflow-x: scroll; 
+		/*justify-content: center;*/
+		align-items: center;
+		padding-left: 0;
+	}
+	section.notes .notes-container .post:nth-child(1){
+		margin-left: 0;
+	}
+	section.notes .notes-container .post{
+		margin-right: 100px; 
+	}
+	/********************* App *********************/
+	
+	section.app .background-div .app-container .app-info{
+		width: 100%;
+		padding: 50px 30px 30px 30px;	
+	}
+	section.app .background-div .app-container .app-pic{
+		display: none;	
+	}
+	/********************* About- Us *********************/
+	
+	section.about-us{
+		/*height: auto;*/
+	}
+	section.about-us .AU-container{
+		padding: 0 50px 10px 50px; 
+	}
+	section.about-us .AU-container img{
+		padding-top: 25px;
+	}
+	section.about-us .AU-container h1{
+		font-size: 1.9rem;
+	}
+	/************************* Contact Us *************************/
+	section.contact-us{
+		height: auto;
+	}
+	section.contact-us .CU-container{
+		display: block;
+	}
+	section.contact-us .CU-container .CU-info{
+		border: 0;
+		/*padding: 0 25px;*/
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 80px;
+	}
+	section.contact-us .CU-container .CU-info div.icons{
+		width: 29%;
+	}
+	section.contact-us .CU-container .details{
+		display: none
+	}
+	section.contact-us .CU-container .details2{
+		width: 71%;
+		display: block !important;
+	}
+	section.contact-us .CU-container .CU-form{
+		width: 100%;
+		border: 0;
+		margin-bottom: 30px;
+	}
+	section.contact-us .CU-container .CU-form form{
+		width: 80%;
+	}
+
+}	

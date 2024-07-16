@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+	<title>Musical Empire</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<link rel="shortcut icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+<body>
+	<div id="scrollbar"></div>
+	<header>
+			<nav>
+				<div class="row">
+					<h2 class="logo animated bounceInLeft">Mus<span>i</span>cal Emp<span>i</span>re</h2>
+				
+					<ul  id="check-class">
+						<li class="animated bounceInRight ss"><a class="btn" href="#"><span></span><span></span><span></span><span></span>Home</a></li>
+						<li class="animated bounceInRight"><a class="btn" href="#"><span></span><span></span><span></span><span></span>App</a></li>
+						<li class="animated bounceInRight"><a class="btn" href="#"><span></span><span></span><span></span><span></span>Notes</a></li>
+						<li class="animated bounceInRight"><a class="btn" href="#"><span></span><span></span><span></span><span></span>About Us</a></li>
+						<li class="animated bounceInRight"><a class="btn" href="#"><span></span><span></span><span></span><span></span>Contact Us</a></li>
+						<li class="animated bounceInRight"><a class="btn" href="#"><span></span><span></span><span></span><span></span>Youtube</a></li>
+					</ul>
+					<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i>
+					</a>
+				</div>
+			</nav>
+	</header>
+	
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop(),
+			 dh = $(document).height(),
+			 wh = $(document).width();
+			scrollPe = (scroll /(dh-wh)) * 100;
+			$('#scrollbar').css('height' , scrollPe + '%');
+		});
+	</script>
+</body>
+</html>
